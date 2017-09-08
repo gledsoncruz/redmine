@@ -1,0 +1,47 @@
+.title {
+  color: #007;
+  font-size: 20pt
+}
+
+.project {
+  margin: 3px 0px;
+  color: white;
+  background-color: darkgreen;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 3px;
+  font-size: 20pt;
+  border-radius: 5px;
+}
+
+.date {
+  font-weight: bold;
+}
+
+.author, .date, .content {
+  font-size: 20pt;
+}
+
+div {
+  margin-bottom: 0.1em;
+}
+
+.content {
+  padding: 0.3em;
+  background-color: #EEE;
+}
+
+.content blockquote {
+  border: thin solid #BBB;
+  background-color: #DDD;
+  padding: 0.3em;
+}
+
+.content blockquote p {
+  padding: 0;
+  margin: 0;
+}
+
+.attributes {
+  font-size: 20pt;
+}

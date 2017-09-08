@@ -1,0 +1,34 @@
+<div class="contextual">
+  <%= link_to l(:label_daemon_configurations), daemon_configurations_path %>
+</div>
+<h2><%= l(:label_daemons) %></h2>
+<table class="list">
+  <thead>
+    <tr>
+      <th><%= l(:field_name)%></th>
+      <th><%= l(:field_running)%></th>
+      <th><%= l(:field_autostart)%></th>
+      <th><%= l(:field_sleep_time)%></th>
+      <th>&nbsp;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @daemons.each do |daemon| %>
+      <tr class="<%= cycle("odd", "even") %>">
+        <td style="text-align: left"><%= daemon.name %></td>
+        <td style="center-align: left"><%= checked_image daemon.running %></td>
+        <td style="center-align: left"><%= checked_image daemon.autostart %></td>
+        <td style="center-align: left"><%= daemon.sleep_time %></td>
+        <td class="buttons">
+          <% if daemon.running %>
+            <%= link_to('Parar', stop_daemon_path(daemon)) %>
+            <%= link_to('Reiniciar', restart_daemon_path(daemon)) %>
+          <% else %>
+            <%= link_to('Iniciar', start_daemon_path(daemon)) %>
+          <% end %>
+          <%= link_to('Log', log_daemon_path(daemon)) %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

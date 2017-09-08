@@ -1,0 +1,35 @@
+<style type="text/css" >
+  div#daemonLog {
+      background-color: black;
+      color: white;
+      padding: 0.3em;
+    }
+    div#daemonLog  pre {
+      white-space: pre-wrap;       /* CSS 3 */
+      white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+      white-space: -pre-wrap;      /* Opera 4-6 */
+      white-space: -o-pre-wrap;    /* Opera 7 */
+      word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    }
+    .contextual {
+      display: block;
+      float: none;
+      text-align: right;
+    }
+</style>
+<h2>Log: <%= @daemon.name %></h2>
+<div class="contextual">
+  <%= link_to 'Voltar', daemons_path %>
+</div>
+<%= content_tag(:p,) do
+  "Caminho do log: \"#{@daemon.log_file}\""
+end %>
+<% if @log %>
+  <%= content_tag(:div, id: 'daemonLog') do
+    content_tag(:pre) { @log }
+  end %>
+<% else %>
+  <%= content_tag(:p,) do
+    content_tag(:em) { 'Arquivo de log não encontrado.' }
+  end %>
+<% end %>

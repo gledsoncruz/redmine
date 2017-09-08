@@ -1,0 +1,23 @@
+<h3>Configuração</h3>
+<p>Para vincular um chat Telegram à sua conta neste Redmine envie a seguinte 
+  mensagem para <span style="font-weight: bold">
+    <%= Notifyme::Settings.telegram_bot_name %></span>:</p>
+<div class="box" >
+  <pre>/user_set <%= User.current.api_key %></pre>
+</div>
+<p>Para desvincular um chat Telegram de sua conta neste Redmine envie a seguinte 
+  mensagem para <span style="font-weight: bold">
+    <%= Notifyme::Settings.telegram_bot_name %></span>:</p>
+<div class="box">
+  <pre>/user_unset</pre>
+</div>
+<h3>Chats vinculados</h3>
+<% if @chats.empty? %>
+  <p><em>Nenhum chat Telegram vinculado</em></p>
+<% else %>
+  <ul>
+    <% @chats.each do |c| %>
+      <li><%= c %></li>
+    <% end %>
+  </ul>
+<% end %>

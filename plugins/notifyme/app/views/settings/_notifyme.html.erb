@@ -1,0 +1,16 @@
+<p>
+  <label>ID do bot Telegram</label>
+  <%= text_field_tag 'settings[telegram_bot_default_chat_id]', settings['telegram_bot_default_chat_id'] %>
+</p>
+<p>
+  <label>Nome do bot Telegram</label>
+  <%= text_field_tag 'settings[telegram_bot_name]', settings['telegram_bot_name'] %>
+</p>
+<p>
+  <label>Notificações de criação de tarefa:</label>
+  <%= check_box_tag('settings[issue_create_event_notify]', true, settings['issue_create_event_notify']) %>
+</p>
+<p>
+  <label>Notificações de atualização de tarefa:</label>
+  <%= check_box_tag('settings[issue_update_event_notify]', true, settings['issue_update_event_notify']) %>
+</p>

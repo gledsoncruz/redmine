@@ -1,0 +1,61 @@
+<style>
+* {
+  font-size: 10pt;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  margin-botton: 0.5em;
+}
+
+.field_title {
+  font-weight: bold;
+}
+
+.new {
+  color: green;
+}
+
+.deleted {
+  color: red;
+}
+
+.reference {
+}
+
+.short_hash {
+  font-weight: bold;
+}
+
+.branches {
+  color: blue;
+}
+
+.offset {
+  font-family: monospace;
+}
+
+.subject {
+  font-size: 8pt;
+}
+</style>
+
+<p class="title">
+  <span class="field_title" >Repositório: </span>
+  <%= repository.url %>
+</p>
+<p>
+  <span class="field_title" >Branch: </span>
+  <%= branch_name %>,
+  <span class="field_title" >Operação: </span>
+  <%= operation %>
+</p>
+<p>
+  <span class="field_title" >Branches: </span>
+  <%= branches_to_graph.map {|b| "#{b[:abbreviation]}: #{b[:label]}"}.join(', ') %>
+</p>
+
+<div class="log">
+<%= html_branches_graph.output %>
+</div>

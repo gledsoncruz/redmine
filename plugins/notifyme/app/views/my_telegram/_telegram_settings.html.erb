@@ -1,0 +1,10 @@
+<%= labelled_form_for @pref, url: my_telegram_path, method: :put do |f| %>
+  <fieldset class="box tabular">
+    <legend><%= l(:label_user_telegram_settings)%></legend>
+    <%= error_messages_for @pref %>
+    <p>
+      <%= f.check_box :no_self_notified, label: l(:label_user_mail_no_self_notified) %>
+    </p>
+    <%= submit_tag l(:button_update) %>
+  </fieldset>
+<% end %>

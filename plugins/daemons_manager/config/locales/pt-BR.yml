@@ -1,0 +1,8 @@
+pt-BR:
+  label_daemon: "Daemon"
+  label_daemons: "Daemons"
+  label_daemon_configurations: Daemons - Configurações
+  field_daemon: 'Daemon'
+  field_sleep_time: 'Periodicidade de execução (Segundos)'
+  field_running: 'Em execução'
+  field_autostart: 'Inicialização automática'

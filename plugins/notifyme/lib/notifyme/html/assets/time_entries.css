@@ -1,0 +1,42 @@
+.hours, .hours * {
+  font-size: 14pt;
+}
+
+.hours_add {
+  color: #070;
+}
+
+.hours_sub {
+  color: #A00;
+}
+
+.total {
+  font-size: 10pt;
+}
+
+label {
+  font-weight: bold;
+}
+
+table.activity {
+  margin-top: 0.5em;
+  border-collapse: collapse;
+}
+
+table.activity td, table.activity th {
+  border: thin solid black;
+  padding: 0.3em;
+  vertical-align: middle;
+}
+
+table.activity thead th {
+  text-align: center;
+}
+
+table.activity tbody th {
+  text-align: left;
+}
+
+table.activity tbody td {
+  text-align: right;
+}

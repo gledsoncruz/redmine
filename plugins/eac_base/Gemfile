@@ -1,0 +1,11 @@
+# Analisador de código Ruby
+# https://github.com/bbatsov/rubocop
+gem 'rubocop'
+
+# Scaffold dinâmico
+# https://github.com/activescaffold/active_scaffold
+gem 'active_scaffold'
+
+# SCSS/SASS para Rails
+# https://github.com/rails/sass-rails
+gem 'sass-rails', '~> 5.0'

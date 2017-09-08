@@ -1,0 +1,10 @@
+<p>
+  <%= offset %>
+  <% if commit? %>
+    <span class='<%= commit_class %>'>
+      <span class='short_hash'><%= short_hash %></span>
+      <span class='subject'><%= subject %></span>
+      <span class='branches'><%= branches %></span>
+    </span>
+  <% end %>
+</p>
