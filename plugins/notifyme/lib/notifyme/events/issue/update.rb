@@ -36,7 +36,7 @@ module Notifyme
         end
 
         def details_items
-          details_to_strings(journal.details, false, only_path: false).map do |s|
+          details_to_strings(journal.details, true, only_path: false).map do |s|
             content_tag('li', s)
           end
         end

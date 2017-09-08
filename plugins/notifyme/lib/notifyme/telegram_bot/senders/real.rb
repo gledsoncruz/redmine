@@ -56,7 +56,7 @@ module Notifyme
           end
 
           def html_to_image_file(html)
-            kit = IMGKit.new(html, quality: 50, width: 600)
+            kit = IMGKit.new(html, quality: 70, width: 600)
             file = Tempfile.new(['development-helper-image', '.png'])
             Faraday::UploadIO.new(kit.to_file(file.path), nil)
           end
