@@ -6,6 +6,3 @@
   padding-top: 2px;
   padding-bottom: 3px;
 }
-
-#admin-menu a.event-exceptions { background-image: url(../../../images/exclamation.png); }
-#admin-menu a.daemons { background-image: url(../../../images/changeset.png); }
