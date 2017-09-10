@@ -16,6 +16,7 @@ gem "actionpack-xml_parser"
 gem "roadie-rails"
 gem "mimemagic"
 gem "pg", "~> 0.18.1", :platforms => [:mri, :mingw, :x64_mingw]
+gem 'unicorn'
 
 
 # Request at least nokogiri 1.6.7.2 because of security advisories
