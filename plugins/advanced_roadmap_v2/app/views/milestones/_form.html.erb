@@ -3,7 +3,7 @@
 <div class="box">
   <p><%= f.text_field :name, :size => 60, :required => true %></p>
   <p><%= f.text_field :description, :size => 60 %></p>
-  <p><%= f.text_field :effective_date, :size => 10 %><%= calendar_for('milestone_effective_date') %></p>
+  <p><%= f.date_field :effective_date, :size => 10 %><%= calendar_for('milestone_effective_date') %></p>
   <p>
     <select id="project_selector" onchange="project_changed()">
       <% @projects.each do |project| %>
