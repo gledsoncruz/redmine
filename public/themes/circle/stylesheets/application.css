@@ -7,13 +7,13 @@
 /**********************************************************/
 
 #header > h1 {
-	background: url(../images/logo.png) no-repeat 20px 13px;
+	background: url(../images/logo1.png) no-repeat 20px 13px;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-device-pixel-ratio: 2) {
 	#header > h1 {
-		background-image: url(../images/logo2x.png);
+		background-image: url(../images/logo22x.png);
 		background-size: 38px 40px;
 	}
 }
@@ -116,7 +116,7 @@ div.gravatar-with-child > img.gravatar:nth-child(2) {
   border: solid 1px #d5d5d5;
   border-radius: inherit;
   top: 35px;
-  left: 35px;	
+  left: 35px;
 }
 
 /**********************************************************/
@@ -810,15 +810,15 @@ input[type="radio"]::before {
     content: "";
     display: none;
     background: #3ba8de;
-    border: 2px solid #fff;    
+    border: 2px solid #fff;
 }
 
 input[type="checkbox"]::before {
-border-radius: 2px;    
+border-radius: 2px;
 }
 
 input[type="radio"]::before {
-   border-radius: 50%; 
+   border-radius: 50%;
 }
 
 input[type="checkbox"]:checked,
@@ -857,7 +857,7 @@ input[type="radio"] {
 }
 
 
-input[type="radio"], 
+input[type="radio"],
 input[type="checkbox"] {
     width: 16px;
     height: 16px;
@@ -865,7 +865,7 @@ input[type="checkbox"] {
 }
 
 input[type="text"]:disabled, input[type="password"]:disabled,
-input[type="number"]:disabled, input[type="email"]:disabled, 
+input[type="number"]:disabled, input[type="email"]:disabled,
 select:disabled, textarea:disabled,
 input[type="radio"]:disabled, input[type="checkbox"]:disabled {
     opacity: 0.5;
@@ -1107,28 +1107,28 @@ div.details {padding: 20px !important;}
   border: 1px solid #e0e2e3;
   border-radius: 3px;
   height: 26px;
-  outline: none;  
+  outline: none;
 }
 
 
 .theme-Circle .select2-container--default .select2-selection--multiple {
   border: 1px solid #e0e2e3;
   border-radius: 3px;
-  outline: none;  
+  outline: none;
 }
 
 .theme-Circle .select2-container--default.select2-container--open .select2-selection,
 .theme-Circle .select2-container--default .select2-selection:focus,
 .theme-Circle .select2-container--default.select2-container--focus .select2-selection--single,
 .theme-Circle .select2-container--default.select2-container--focus .select2-selection--multiple {
-	border-color: #2996cc;	
+	border-color: #2996cc;
 }
 
 .theme-Circle .select2-container--default .select2-selection--single .select2-selection__rendered {
-  padding-left: 24px;  
+  padding-left: 24px;
   line-height: 25px;
   font-size: 12px;
-  outline: none;  
+  outline: none;
 }
 
 .theme-Circle .select2-container--default .select2-selection--multiple .select2-selection__rendered {
@@ -1137,11 +1137,11 @@ div.details {padding: 20px !important;}
 
 .theme-Circle .select2-container--default .select2-selection--single .select2-selection__arrow {
   height: 25px;
-  outline: none;  
+  outline: none;
 }
 
 .theme-Circle .select2-container--default .select2-selection--single .select2-selection__arrow b {
-  border-color: #afafaf transparent transparent transparent;	
+  border-color: #afafaf transparent transparent transparent;
 }
 .theme-Circle .select2-dropdown {
   border: 1px solid #2996cc;
