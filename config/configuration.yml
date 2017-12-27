@@ -11,7 +11,7 @@ production:
   delivery_method: :smtp
   smtp_settings:
     address: "smtp.ippuvr.com.br"
-    port: 25
+    port: 587
     authentication: :plain
     domain: "ippuvr.com.br"
     user_name: redmine@ippuvr.com.br
