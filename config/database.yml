@@ -39,7 +39,12 @@ development:
 
 production:
  adapter: postgresql
- url: <%= ENV['DATABASE_URL'] %>
+ database: ippuvr
+ host: pgsql.ippuvr.com.br
+ username: ippuvr
+ password: "ippuvr123"
+
+#url: <%= ENV['DATABASE_URL'] %>
 
 # SQLite3 configuration example
 #production:
