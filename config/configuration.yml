@@ -13,6 +13,7 @@ production:
     address: "smtp.ippuvr.com.br"
     port: 587
     authentication: :plain
+    openssl_verify_mode: none
     domain: "ippuvr.com.br"
     user_name: redmine@ippuvr.com.br
     password: gledsoncruz@123
