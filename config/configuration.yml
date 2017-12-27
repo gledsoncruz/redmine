@@ -10,9 +10,9 @@
 production:
   delivery_method: :smtp
   smtp_settings:
-    address: "smtp.sendgrid.net"
+    address: "smtp.ippuvr.com.br"
     port: 25
     authentication: :plain
-    domain: "heroku.com"
-    user_name: <%= ENV['SENDGRID_USERNAME'] %>
-    password: <%= ENV['SENDGRID_PASSWORD'] %>
+    domain: "ippuvr.com.br"
+    user_name: redmine@ippuvr.com.br
+    password: gledsoncruz@123
