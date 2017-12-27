@@ -38,6 +38,7 @@ development:
  password: "postgres"
 
 production:
+ adapter: postgresql
  url: <%= ENV['DATABASE_URL'] %>
 
 # SQLite3 configuration example
