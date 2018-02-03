@@ -30,4 +30,4 @@
 /.bundle
 # eac_redmine
 /log/*.pid
-
+.DS_Store
