@@ -123,4 +123,4 @@ Dir.glob File.expand_path("../plugins/*/{Gemfile,PluginGemfile}", __FILE__) do |
   eval_gemfile file
 end
 
-ruby "2.2.3"
+#ruby "2.2.3"
